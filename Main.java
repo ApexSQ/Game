@@ -76,6 +76,7 @@ public class Main {
                 System.out.println("Building added successfully.");
 
             } else if (choice == 2) {
+
                 System.out.print("Enter the name of the villager: ");
                 String villagerName = input.nextLine();
                 System.out.print("Enter the profession of the villager (1 = Knight, 2 = Blacksmith, 3 = Farmer): ");
@@ -101,6 +102,7 @@ public class Main {
                 myTerritory.addVillager(newVillager);
                 System.out.println("Villager added successfully.");
             } else if (choice == 3) {
+                
                 System.out.print("Enter the name of the villager to assign: ");
                 String villagerName = input.nextLine();
                 Villager villagerToAssign = null;
