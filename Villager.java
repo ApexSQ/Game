@@ -1,6 +1,6 @@
 public class Villager {
-    private String name;
-    private String profession;
+    private String name;         // Name of the villager
+    private String profession;   // Profession of the villager
 
     public Villager(String name, String profession) {
         this.name = name;

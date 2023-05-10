@@ -10,16 +10,27 @@ public abstract class Building {
         this.occupants = new ArrayList<>();
     }
 
+    /**
+     * Returns the name of the building.
+     * @return the name of the building
+     */
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Adds a villager as an occupant of the building.
+     * @param villager the villager to add
+     */
     public void addOccupant(Villager villager) {
         this.occupants.add(villager);
     }
 
+    /**
+     * Returns a list of the occupants of the building.
+     * @return a list of the occupants of the building
+     */
     public List<Villager> getOccupants() {
         return this.occupants;
     }
 }
-
