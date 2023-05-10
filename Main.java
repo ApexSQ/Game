@@ -16,14 +16,16 @@ public class Main {
                 input.nextLine(); // consume the newline character
                 switch (choiceT) {
                     case 1:
-                        System.out.print("Enter the name of your kingdom: ");
+                        System.out.print("Enter the name of your Kingdom: ");
                         String kingdomName = input.nextLine();
                         myTerritory = Territory.createKingdom(kingdomName);
+                        System.out.println("Kingdom created: " + myTerritory.getName());
                         break;
                     case 2:
-                        System.out.print("Enter the name of your dynasty: ");
+                        System.out.print("Enter the name of your Dynasty: ");
                         String dynastyName = input.nextLine();
                         myTerritory = Territory.createDynasty(dynastyName);
+                        System.out.println("Dynasty created: " + myTerritory.getName());
                         break;
                     default:
                         System.out.println("Invalid choice.");
@@ -37,10 +39,6 @@ public class Main {
                 input.nextLine(); // clear the invalid input
             }
         }
-        
-
-        System.out.println("Territory created: " + myTerritory.getName());
-
 
         while (true) {
 
